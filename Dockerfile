@@ -28,6 +28,9 @@ VOLUME /app /output
 # Specify geoip2 version until https://github.com/ajanata/PretendYoureXyzzy/pull/228
 RUN rm -rf /project
 RUN rm -rf /project
+RUN rm -rf /project
+RUN rm -rf /project
+
 RUN apk --no-cache add git openssh \
  && git clone -b $GIT_BRANCH https://github.com/noahhusby/PretendYoureXyzzy.git /project \
  && cd project \
