@@ -31,6 +31,7 @@ RUN rm -rf /project
 RUN rm -rf /project
 RUN rm -rf /project
 RUN rm -rf /project
+RUN rm -rf /project
 
 RUN apk --no-cache add git openssh \
  && git clone -b $GIT_BRANCH https://github.com/noahhusby/PretendYoureXyzzy.git /project \
